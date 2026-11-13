@@ -1,2 +1,4 @@
 # quimica-trabajito-jejeje
-Trabajo de quimica de la web xd
+web hecha for franco, byron
+la informacion by bahia
+eso es todo amiguitos
