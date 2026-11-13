@@ -85,6 +85,15 @@ body::after {
 
 body.abajo::after { opacity: 1; }
 
+/* "Check de celular": en pantallas angostas el fondo mantiene sus proporciones
+   (cover) en vez de estirarse deformado — en PC sigue 100% 100%, igual que siempre */
+@media (max-width: 700px) {
+  body::before,
+  body::after {
+    background-size: cover;
+  }
+}
+
 @media (max-width: 900px) {
   .burbuja { display: none; }
 }
