@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soberanía Científica — Petróleo</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- ══════════ NAV FIJA ══════════ -->
+  <nav class="nav">
+    <span class="nav-logo">⛽ Petróleo</span>
+    <a href="#intro">Soberanía</a>
+    <a href="#quimica">Química</a>
+    <a href="#importancia">Importancia</a>
+    <a href="#proceso">Proceso</a>
+  </nav>
+
+  <!-- ══════════ HERO ══════════ -->
+  <header class="hero" id="inicio">
+    <h1>
+      <span class="palabra izquierda">SOBERANÍA</span>
+      <span class="palabra derecha">CIENTÍFICA</span>
+    </h1>
+    <p class="hero-nombres">Franco Kurriger · Byron Mangold · Bahía Quiroga</p>
+    <p class="hero-tema">Petróleo</p>
+    <div class="hero-flecha">↓</div>
+  </header>
+
+  <main>
+
+    <!-- ══════════ SECCIÓN 1 ══════════ -->
+    <section class="seccion" id="intro">
+      <h2 class="titulo-seccion">¿Qué es la soberanía científica?</h2>
+      <div class="contenido">
+        <p class="parrafo">
+          La soberanía científica es la capacidad de un país de decidir por sí mismo, con
+          conocimiento propio, cómo usar sus recursos, su tecnología y su energía. No depende
+          de otros para tomar las decisiones que definen su economía y el bienestar de su gente.
+        </p>
+        <p class="parrafo">
+          El petróleo es un ejemplo claro: saber qué es, cómo se forma, cómo se extrae y quién
+          administra sus beneficios es una parte central de esas decisiones.
+        </p>
+      </div>
+    </section>
+
+    <!-- ══════════ SECCIÓN 2 ══════════ -->
+    <section class="seccion" id="quimica">
+      <h2 class="titulo-seccion">Relación con la <span class="resaltado">Química</span></h2>
+      <div class="contenido">
+        <p class="parrafo">
+          El petróleo se forma a partir de materia orgánica que, enterrada durante millones de
+          años bajo presión y temperatura, se transforma en <strong>hidrocarburos</strong>: moléculas
+          formadas por carbono e hidrógeno (de ahí "hidro" + "carburo"). Es una mezcla de miles de
+          compuestos, de los cuales se extrae el crudo.
+        </p>
+        <div class="tarjetas">
+          <div class="tarjeta">
+            <div class="tarjeta-icono">🧪</div>
+            <h3>Componentes</h3>
+            <p><strong>Benceno:</strong> muy volátil, con vapores inflamables y tóxicos.<br>
+               <strong>Tolueno:</strong> una sustancia aromática.</p>
+          </div>
+          <div class="tarjeta">
+            <div class="tarjeta-icono">🔥</div>
+            <h3>Gases licuados</h3>
+            <p><strong>Propano y butano:</strong> denominados gases licuados del petróleo (GLP).</p>
+          </div>
+          <div class="tarjeta">
+            <div class="tarjeta-icono">🛢️</div>
+            <h3>Combustibles</h3>
+            <p><strong>Gasolinas y naftas</strong> para motores y como materia prima petroquímica.<br>
+               <strong>Gasóleos</strong> para motores diésel y calefacción.<br>
+               <strong>Fuelóleos</strong> para centrales térmicas.</p>
+          </div>
+          <div class="tarjeta">
+            <div class="tarjeta-icono">🏭</div>
+            <h3>Otros usos</h3>
+            <p><strong>Aceites lubricantes</strong> para la mecánica.<br>
+               <strong>Asfaltos</strong> para pavimentar caminos.<br>
+               Materia prima de <strong>plásticos, medicamentos, pinturas y textiles</strong>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ SECCIÓN 3 ══════════ -->
+    <section class="seccion" id="importancia">
+      <h2 class="titulo-seccion">Importancia para la <span class="resaltado">Soberanía</span></h2>
+      <div class="contenido">
+        <p class="parrafo">
+          La <strong>soberanía energética nacional</strong> es la capacidad de un país de decidir y
+          legislar cómo gestiona su energía: qué matriz privilegia (¿hidrocarburos, energía
+          hidroeléctrica o nuclear?) y, sobre todo, <strong>quién es dueño de los recursos</strong>.
+          El subsuelo, donde están los yacimientos petroleros, suele ser de dominio público por su
+          valor estratégico; en cambio, el suelo agrícola es de dominio privado.
+        </p>
+        <p class="parrafo">
+          Cuando los recursos son públicos, el Estado puede explotarlos directamente con empresas
+          propias —como Venezuela, con el Estado como único dueño— o con participación mayoritaria,
+          como en la Argentina. También puede ceder el uso a privados mediante la modalidad de
+          <strong>concesión</strong>. Las leyes además buscan que la explotación no deteriore el
+          ambiente ni perjudique a las poblaciones cercanas, entendiendo la energía como un
+          <strong>bien común</strong>, antes que un bien de particulares.
+        </p>
+        <p class="parrafo">
+          ¿Y por qué es importante? Porque la <strong>energía es una condición básica</strong> para el
+          funcionamiento de la economía y el bienestar de la población. Por eso la soberanía energética
+          implica decidir sobre todas las fases del circuito productivo: la exploración y explotación de
+          los recursos, si se privilegia el <strong>consumo interno o el externo</strong>, y cómo se
+          definen los <strong>precios de los combustibles</strong>.
+        </p>
+        <div class="datos">
+          <div class="dato">
+            <span class="dato-numero">Subsuelo</span>
+            <span class="dato-label">Dominio público por su valor estratégico</span>
+          </div>
+          <div class="dato">
+            <span class="dato-numero">Concesión</span>
+            <span class="dato-label">El Estado cede el uso del recurso a privados</span>
+          </div>
+          <div class="dato">
+            <span class="dato-numero">Bien común</span>
+            <span class="dato-label">Decidir las prioridades energéticas</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ SECCIÓN 4 ══════════ -->
+    <section class="seccion" id="proceso">
+      <h2 class="titulo-seccion">El <span class="resaltado">Proceso</span></h2>
+      <div class="contenido">
+        <div class="timeline">
+          <div class="paso">
+            <div class="paso-circulo">1</div>
+            <div class="paso-contenido">
+              <h3>Formación</h3>
+              <p>
+                Hace millones de años, los restos de animales, plantas y microorganismos quedaron
+                enterrados bajo capas de arena y arcilla, cada vez más profundas. La elevada presión,
+                las grandes temperaturas y la ausencia de oxígeno los transformaron lentamente en
+                hidrocarburos, capaces de fluir hasta la superficie al perforar el reservorio.
+              </p>
+            </div>
+          </div>
+          <div class="paso">
+            <div class="paso-circulo">2</div>
+            <div class="paso-contenido">
+              <h3>Exploración</h3>
+              <p>
+                Antes de perforar, se realizan estudios geológicos y geofísicos del subsuelo para
+                localizar zonas donde puedan haberse acumulado hidrocarburos. La perforación
+                exploratoria confirma si existen reservas aprovechables y las condiciones del yacimiento.
+              </p>
+            </div>
+          </div>
+          <div class="paso">
+            <div class="paso-circulo">3</div>
+            <div class="paso-contenido">
+              <h3>Extracción</h3>
+              <p>
+                Se perforan y acondicionan pozos, se extrae el crudo y se separan inicialmente sus
+                componentes. Los métodos varían según la profundidad, la presión y el tipo de roca,
+                con controles de seguridad para reducir el impacto ambiental. Puede hacerse en
+                campos terrestres o sobre plataformas instaladas en el mar (offshore).
+              </p>
+            </div>
+          </div>
+          <div class="paso">
+            <div class="paso-circulo">4</div>
+            <div class="paso-contenido">
+              <h3>No convencionales: fracking</h3>
+              <p>
+                Cuando el hidrocarburo está atrapado en rocas poco permeables o de baja porosidad,
+                no fluye solo: se necesita tecnología especial, como la perforación horizontal junto
+                con la fracturación hidráulica (fracking). EE.UU. fue pionero, y luego se extendió a
+                países como Argentina, Rusia o China.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

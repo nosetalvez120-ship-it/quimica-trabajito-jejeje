@@ -3,7 +3,7 @@
 // ═══════════════════════════════════════
 
 const elementos = document.querySelectorAll(
-  ".seccion, .tarjeta, .dato, .paso, .hero h1, .hero-tema, .hero-integrantes"
+  ".seccion, .tarjeta, .dato, .paso, .hero h1, .hero-tema, .hero-integrantes, .cierre-texto"
 );
 
 elementos.forEach((el) => el.classList.add("reveal"));

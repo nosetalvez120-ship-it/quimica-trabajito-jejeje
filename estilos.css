@@ -246,12 +246,14 @@ body.abajo::after { opacity: 1; }
   gap: 1.6rem;
 }
 
-.timeline::before {
+/* Línea del timeline: cada paso dibuja su tramo hasta el círculo siguiente,
+   así la línea termina exactamente en el paso 4 (sin cable colgando) */
+.paso:not(:last-child)::before {
   content: "";
   position: absolute;
-  left: 16px;
+  left: calc(-2.4rem + 16px);
   top: 12px;
-  bottom: 12px;
+  bottom: -1.6rem;
   width: 2px;
   background: var(--acento);
   opacity: 0.5;
@@ -282,6 +284,22 @@ body.abajo::after { opacity: 1; }
 }
 
 .paso-contenido h3 { color: var(--acento); font-size: 1rem; margin-bottom: 0.6rem; }
+
+/* ─────────── CIERRE ─────────── */
+.cierre { text-align: center; padding-bottom: 6rem; }
+
+.cierre-texto {
+  max-width: 640px;
+  margin: 0 auto;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--suave);
+  background: var(--panel);
+  border: 1px solid var(--borde);
+  border-radius: 14px;
+  padding: 1.8rem 2rem;
+  line-height: 1.9;
+}
 
 /* ─────────── ANIMACIÓN ─────────── */
 .reveal {
