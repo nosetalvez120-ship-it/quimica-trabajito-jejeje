@@ -1,0 +1,290 @@
+/* ═══════════════════════════════════════════
+   SOBERANÍA CIENTÍFICA — PETRÓLEO
+   Diseño simple y cálido, con foto de fondo
+   ═══════════════════════════════════════════ */
+
+:root {
+  --fondo: #10141d;
+  --panel: rgba(20, 26, 38, 0.88);
+  --tinta: #f2efe9;
+  --suave: #a8b0bd;
+  --acento: #f0a35e;       /* atardecer */
+  --borde: #2a3446;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  color: var(--tinta);
+  line-height: 1.7;
+  background: var(--fondo);
+  overflow-x: hidden;
+}
+
+
+
+/* ─────────── NAV ─────────── */
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.4rem;
+  padding: 0.9rem 1.6rem;
+  z-index: 100;
+}
+
+.nav a {
+  color: var(--suave);
+  text-decoration: none;
+  font-size: 0.92rem;
+}
+
+.nav a:hover { color: var(--tinta); }
+
+/* ─────────── HERO ─────────── */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1.5rem;
+  position: relative;
+  /* sin velo propio: el velo va pegado a la imagen en .fondo-inicio */
+}
+
+/* Fondo único fijo: el meme completo (la foto original con los personajes), sin zoom ni recortes */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(rgba(16, 20, 29, 0.35), rgba(16, 20, 29, 0.75)),
+    url("plataforma.jpg") center / 100% 100% no-repeat;
+}
+
+/* Segunda capa: la petrolera limpia, invisible al inicio (fade al bajar) */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(rgba(16, 20, 29, 0.35), rgba(16, 20, 29, 0.75)),
+    url("fondo.jpg") center / 100% 100% no-repeat;
+  opacity: 0;
+  transition: opacity 1.2s ease;
+}
+
+body.abajo::after { opacity: 1; }
+
+@media (max-width: 900px) {
+  .burbuja { display: none; }
+}
+
+.hero h1 {
+  font-size: clamp(2.6rem, 8vw, 5.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.hero h1 span { color: var(--acento); }
+
+.hero-tema {
+  margin-top: 1.4rem;
+  font-size: 1.2rem;
+  color: var(--tinta);
+  background: rgba(16, 20, 29, 0.6);
+  border-radius: 999px;
+  padding: 0.5rem 1.8rem;
+}
+
+/* Integrantes, abajo del todo (donde estaba Petróleo) */
+.hero-integrantes {
+  position: absolute;
+  bottom: 5rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: max-content;
+  max-width: 90vw;
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--tinta);
+  background: rgba(16, 20, 29, 0.55);
+  padding: 0.4rem 1.6rem 0.55rem;
+  border-radius: 14px;
+}
+
+.integrantes-titulo {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--acento);
+  margin-bottom: 0.15rem;
+}
+
+.hero-flecha {
+  position: absolute;
+  bottom: 2.5rem;
+  font-size: 1.6rem;
+  color: var(--tinta);
+  animation: rebote 1.8s infinite;
+}
+
+@keyframes rebote {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(9px); }
+}
+
+/* ─────────── SECCIONES ─────────── */
+.seccion {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 5.5rem 1.5rem;
+}
+
+.titulo-seccion {
+  font-size: clamp(1.7rem, 4.5vw, 2.4rem);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2.2rem;
+}
+
+.resaltado { color: var(--acento); }
+
+.contenido { display: grid; gap: 1rem; }
+
+/* ─────────── PLACEHOLDERS ─────────── */
+.ph {
+  border: 2px dashed rgba(168, 176, 189, 0.35);
+  border-radius: 14px;
+  background: var(--panel);
+  color: var(--suave);
+  padding: 1.8rem;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.parrafo {
+  background: var(--panel);
+  border: 1px solid var(--borde);
+  border-radius: 14px;
+  padding: 1.4rem 1.6rem;
+}
+
+.tarjeta p { font-size: 0.92rem; color: var(--suave); }
+
+.paso-contenido p { font-size: 0.95rem; color: var(--suave); }
+
+/* ─────────── TARJETAS ─────────── */
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.tarjeta {
+  background: var(--panel);
+  border: 1px solid var(--borde);
+  border-radius: 14px;
+  padding: 1.6rem 1.2rem;
+  text-align: center;
+}
+
+.tarjeta-icono { font-size: 2rem; margin-bottom: 0.6rem; }
+
+.tarjeta h3 { font-size: 1rem; color: var(--acento); margin-bottom: 0.6rem; }
+
+/* ─────────── DATOS ─────────── */
+.datos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.dato {
+  background: var(--panel);
+  border: 1px solid var(--borde);
+  border-radius: 14px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.dato-numero { font-size: 1.9rem; font-weight: 800; color: var(--acento); }
+
+.dato-label {
+  font-size: 0.82rem;
+  color: var(--suave);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* ─────────── TIMELINE ─────────── */
+.timeline {
+  position: relative;
+  padding-left: 2.4rem;
+  display: grid;
+  gap: 1.6rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 16px;
+  top: 12px;
+  bottom: 12px;
+  width: 2px;
+  background: var(--acento);
+  opacity: 0.5;
+}
+
+.paso { position: relative; }
+
+.paso-circulo {
+  position: absolute;
+  left: -2.4rem;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--panel);
+  border: 2px solid var(--acento);
+  color: var(--acento);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paso-contenido {
+  background: var(--panel);
+  border: 1px solid var(--borde);
+  border-radius: 14px;
+  padding: 1.3rem;
+}
+
+.paso-contenido h3 { color: var(--acento); font-size: 1rem; margin-bottom: 0.6rem; }
+
+/* ─────────── ANIMACIÓN ─────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+@media (max-width: 600px) {
+  .seccion { padding: 4rem 1rem; }
+  .nav a { font-size: 0.8rem; }
+  .hero h1 { font-size: 2.6rem; }
+}
